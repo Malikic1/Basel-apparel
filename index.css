@@ -98,8 +98,10 @@ button{
     .image{
       width: 13rem;
     }
+  input{
+    width:17rem;
+    }
     button{
-      width:3.5rem;
       left:75%;
     }
 }
