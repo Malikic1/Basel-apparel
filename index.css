@@ -99,10 +99,10 @@ button{
       width: 13rem;
     }
   input{
-    width:17rem;
+    width:16rem;
     }
     button{
-      left:75%;
+      left:80%;
     }
 }
 @media screen and (min-width:601px) and (max-width:890px){
