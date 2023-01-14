@@ -98,8 +98,11 @@ button{
     .image{
       width: 13rem;
     }
+  input{
+    width:17rem !important;
+    }
     button{
-      left:72%;
+      left:75%;
     }
 }
 @media screen and (min-width:601px) and (max-width:890px){
