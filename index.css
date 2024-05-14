@@ -10,27 +10,23 @@ body {
   background-repeat: no-repeat;
   background-size: 100% 200%;
 }
-main {
-  margin-top: 3%;
-}
+
 .logo {
   width: 7rem;
-  height: 5rem;
-  position: relative;
+  position: absolute;
   top: 2rem;
-  left: 6.75rem;
+  margin-left: 5%;
 }
 .container {
-  width: 100%;
-  height: 30rem;
+  width: 96%;
+  padding: 0 2% 0 2%;
   display: flex;
   flex-direction: row;
-  margin: -4rem auto;
+  margin: 4rem auto;
   justify-content: space-evenly;
 }
 .content1 {
-  width: 65%;
-  height: 100%;
+  width: fit-content;
   align-self: center;
 }
 .circle {
@@ -40,29 +36,27 @@ main {
   border-radius: 50%;
 }
 .brand {
-  position: relative;
-  top: -2.7rem;
+  position: absolute;
+  margin-top: -2rem;
   left: 2.2rem;
   letter-spacing: 0.1rem;
   font-size: 0.8rem;
 }
 .intro {
   letter-spacing: 0.9rem;
-  font-size: 2.5rem;
-  line-height: 2.4rem;
+  font-size: 4rem;
+  line-height: 3.5rem;
   font-family: Courier;
   font-weight: 500;
   margin-top: 6.5rem;
 }
-.mg-l {
-  margin-left: 6rem;
-}
 .text {
-  font-size: 0.9rem;
+  font-size: 1rem;
   letter-spacing: 0.8px;
   font-family: cursive;
   word-spacing: 0.5px;
-  margin-top: -1.3rem;
+  margin-top: -2.4rem;
+  width: 470px;
 }
 input {
   width: 20rem;
@@ -81,15 +75,16 @@ button {
   height: 2.25rem;
   border-radius: 1.3rem;
   position: absolute;
-  left: 25rem;
+  margin-left: -3rem;
   background-color: pink;
 }
 .content2 {
-  width: 35%;
-  height: 90%;
+  width: 20rem;
+  height: auto;
+  align-self: center;
 }
 .image {
-  width: 20rem;
+  width: 15rem;
   height: auto;
 }
 @media screen and (max-width: 700px) {
@@ -101,10 +96,9 @@ button {
     left: 0.5rem;
   }
   .container {
-    width: 100%;
     flex-direction: column-reverse;
-    height: auto;
-    margin-top: 1rem;
+
+    margin-top: 4rem;
   }
   .content1 {
     width: 100%;
@@ -119,25 +113,28 @@ button {
   }
   .content2 {
     width: 100%;
-
     text-align: center;
   }
   .image {
-    width: 13rem;
+    width: 11rem;
+  }
+  .text {
+    margin: auto;
   }
   input {
     width: 17rem !important;
   }
-  button {
-    left: 75%;
+}
+@media screen and (min-width: 601px) and (max-width: 830px) {
+  .text {
+    width: 90%;
+  }
+  .logo {
+    margin-left: 10px;
   }
 }
-@media screen and (min-width: 601px) and (max-width: 890px) {
-  main {
-    transform: scale(0.8);
-    margin-left: -10%;
-  }
+@media screen and (max-width: 490px) {
   .text {
-    font-size: 0.8rem;
+    width: 95%;
   }
 }
